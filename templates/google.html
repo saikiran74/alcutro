@@ -1,0 +1,44 @@
+
+{% extends 'base.html'%}
+{% block content %}
+<title>Google Category</title>
+<h5>Google</h5>
+{% for post in post %}
+    {% if post.google %}
+        <div class="card">
+          <div class="card-header" id="card-header">
+            <div class="row">
+              <div class="col-10">
+                <h1 style="font-family: Arial, Helvetica, sans-serif;">{{post.head}}</h1>
+              </div>
+              <div class="col-2">
+                <a onclick="heart()" >
+                  <span style="color: rgba(0, 0, 82, 0.973);" id="heart">
+                    <span class="fa fa-heart fa-3x"></span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="{{post.head}}" style="text-decoration: none;">
+            <div class="card-body" >
+              <h2>{{post.subheading}}</h2></a><br>
+              <p>{{post.description}}</p>
+              <div class="row">
+                <div class="col-6">
+                  <h5>Category:
+                    <a href="{{post.category}}" style="text-decoration: none;">{{post.category}}</a></h5>
+                </div>
+                <div class="col-6">
+                  <h5>Date:
+                    <span style="color: rgba(98, 98, 255, 0.973);">{{post.date}}</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+        </div>
+        <br><br><br>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
+  
