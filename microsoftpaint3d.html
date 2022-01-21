@@ -1,0 +1,419 @@
+<title></title>
+{% extends 'base.html'%}
+{% block content %}
+<div class="col-12 col-sm-12">
+    <div class="card">
+      <h3 class="card-header bg-primary text-white">3D Paint</h3>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tbody>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Activate menu bar</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">f10</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Bold selected text</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">B</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Capture screenshot</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">C</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Close program</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Alt</span>
+                  <span class="badge badge-secondary badge-pill">F4</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Copy selected item</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">C</span>Or<br>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Insert</span>
+
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a picture/file</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">N</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Cut selected item</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">X</span>Or<br>
+                  <span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">Delect</span>
+
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Cycle through screen element in window</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">F6</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Decrease brush size</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">-</span>Or
+                  <span class="badge badge-secondary badge-pill">[</span>
+
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Group objects</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">G</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Increase brush size</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">+</span>Or
+                  <span class="badge badge-secondary badge-pill">]</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Italicize selected text</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">I</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Minimize/expand side menu</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">M</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Move select/active shape down by 1 pixel</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">&darr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Move select/active shape left by 1 pixel</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">&larr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Move select/active shape right by 1 pixel</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">&rarr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Move select/active shape up by 1 pixel</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">&uarr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Open an existing picture/file</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">O</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Orbit down</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">&darr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Orbit left</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">&larr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Orbit right</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">&rarr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Orbit up</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">&uarr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Pan down</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Alt</span>
+                  <span class="badge badge-secondary badge-pill">&darr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Pan left</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Alt</span>
+                  <span class="badge badge-secondary badge-pill">&larr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Pan right</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Alt</span>
+                  <span class="badge badge-secondary badge-pill">&rarr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Pan up</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Alt</span>
+                  <span class="badge badge-secondary badge-pill">&uarr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Paste selected item</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">V</span>Or<br>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Insert</span>
+
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Print in 2D</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">P</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Redo an action</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Y</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Reset view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Home</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Reset zoom</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">0</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Save</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">S</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Select canvas</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">W</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Select all 3D/2D item in workspace</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">A</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show canvas properties</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">E</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show/hide 3D perspective</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">W</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show/hide canvas</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">W</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show the context menu</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">F10</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Stop/leave current task</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Esc</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Switch views</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">3</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Turn on eyedropper</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">I</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Underline selected text</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">U</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Undo an action</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Z</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Ungroup objects</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">G</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>View picture in full screen mode</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">F11</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Zoom in/out</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Mouse wheel</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Zoom in</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">PgUp</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Zoom out</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">PgDn</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>2D crop</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">X</span>
+                </h5></td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}

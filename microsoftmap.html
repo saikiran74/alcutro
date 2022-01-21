@@ -1,0 +1,184 @@
+<title></title>
+{% extends 'base.html'%}
+{% block content %}
+<div class="col-12 col-sm-12">
+    <div class="card">
+      <h3 class="card-header bg-primary text-white">Microsoft map</h3>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tbody>
+
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Current location</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Home</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Close the active tab</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">W</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>copy to clipboard</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">C</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Get directions</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">D</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go back</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Backspace</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to previous tab</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">Tab</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to next tab</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Tab</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Minimize the tab</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">M</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Closer in 3D cities view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Page Up or Page Down</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Focus to map</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">L</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Pan the map in any direction</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Arrow keys</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Print</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">P</span>
+
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Rotate</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">&larr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Search</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">F</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show Or hide Streetside</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">S</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show Or hide traffic</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">T</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Map views between aerial and road</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">Y</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Tilt</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">&uarr;</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Zoom in Or out</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">+</span> Or
+                  <span class="badge badge-secondary badge-pill">-</span>
+                </h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Zoom in or out in 3D cities view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                <h5>
+                  <span class="badge badge-secondary badge-pill">+ or -</span>
+                </h5></td>
+              </tr>
+
+
+
+
+            </tbody>
+
+
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}

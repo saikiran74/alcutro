@@ -1,0 +1,956 @@
+<title></title>
+{% extends 'base.html'%}
+{% block content %}
+<div class="col-12 col-sm-12">
+    <div class="card">
+      <h3 class="card-header bg-dark text-white">Frequently used shortcuts</h3>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tbody>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Check for new messages</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">M</span>
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Close a window or menu</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Esc</span>
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Copy an item</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">C</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a new message</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">M</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create an appointment</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">A</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Delete an item</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Delete</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Forward message</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,F,W</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">2</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to home tab</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to send/receive tab</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">J,S</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Insert a file</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">N,A,F</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Move an item to folder</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,M,V</span>
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>New task</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">K</span>
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Open save As dialog on attachment tab</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">J,A,V</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Reply to messaage</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,R,P</span>
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Search for an item</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">E</span>
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Select the reply all option</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,R,A</span>Or<br>F3
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Send a message</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">S</span>
+                  </h5>
+                </td>
+              </tr>
+
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <div class="col-12 col-sm-12">
+    <div class="card">
+      <h3 class="card-header bg-dark text-white">Calender keyboard shortcuts</h3>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tbody>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Add shared calenders from your ccontacts</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H</span>
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Assign a sound to reminder</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">F</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a meeting request</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H</span>Or<br>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">Q</span>
+
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a new calender group</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create an appointment in any outlook view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">A</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create an appointment in calender view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">N</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Dismiss the reminder</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">D</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Email a selected calender to contact</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,E</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Forward an appointment or meeting</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,F,W</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>GO to date</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,L</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to end of the week</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">End</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to next appointment</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">.</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to next day</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">&rarr;</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to next month</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">PgDn</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to next week</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">&darr;</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to previous appointment</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">,</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Goto previous day</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">&larr;</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Goto previous month</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">PgUp</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to previous week</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">&uarr;</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to start of the week</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">Home</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Jump to search</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">E</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Open an appointment when reminder appears</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">O</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Open address book</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,A,B</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Open new items menu to select item you'd like to create</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,I</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Open the Outlook options dialog for calenders</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,C,O</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Open remainder window</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">V,M</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Publish a calender online</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,P,O</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Reply to meeting request with a message</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">R</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Search for contacts</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,F,C</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Select the reply all option</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">R</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Setup recurrence for an open appointment or meeting</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">G</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Share a calender with others</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,S,C</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show eight days in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">8</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show five days in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">5</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show four days in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">4</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show nine days in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">9</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show one day in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">1</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show seven days in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">7</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show six days in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">6</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show ten days in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">0</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show daily view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,R</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show next seven days</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,X</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show selected schedule meetings</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,S,V</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show three days in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">3</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show today in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,O,D</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Show two days in calender</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">2</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Snooze the reminder</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">S</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Switch to month view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">Equal</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Switch to full week view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">-</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Switch to work week view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">2</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>View and edit sharing permissions for a folder</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">H,P,F</span>
+                  </h5>
+                </td>
+              </tr>
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <div class="col-12 col-sm-12">
+    <div class="card">
+      <h3 class="card-header bg-dark text-white">Create an item or file</h3>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tbody>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a contact group</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">L</span>
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a contact</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">C</span>
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a fax</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">X</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a folder</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">E</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Creating a meeting request</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">Q</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a message</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">M</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a note</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">N</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a search folder</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">P</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a task</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">K</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create an appointment</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">A</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create an microsoft office document</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">H</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Post a reply in selected folder</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">T</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Post to selected folder</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">S</span>
+                  </h5>
+                </td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <div class="col-12 col-sm-12">
+    <div class="card">
+      <h3 class="card-header bg-dark text-white">People keyboard shortcuts</h3>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tbody>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Close a contact</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Esc</span>
+                  </h5>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a contact from outlook view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">C</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a contact</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">N</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a contact group</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">L</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Create a message with selected contact as object</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">F</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Dial a new call to contact</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">D</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Enter a name in search address books</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">F11</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Find a contact in favourites</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">F11</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Find a contact</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">E</span>Or<br>
+                    <span class="badge badge-secondary badge-pill">F3</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Go to a diifferent folder</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Y</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>In a contact form under internet dispaly the email 1 information</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">Shift/span>
+                    <span class="badge badge-secondary badge-pill">1</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>In a contact form under internet dispaly the email 2 information</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">2</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>In a contact form under internet dispaly the email 3 information</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">Shift/span>
+                    <span class="badge badge-secondary badge-pill">3</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>In open contact open the next contact listed</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">.</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>In table or list view of contacts</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Shift followed by letter</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Open a contact form for selected contact</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">O</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>OPen address book</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">B</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5></h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill"></span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Open the check address dialog</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Alt</span>
+                    <span class="badge badge-secondary badge-pill">D</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Open print dialog</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">P</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Select all contacts</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">A</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Send a fax to selected contact</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">X</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>UPdate a list of contact group members</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">F5</span>
+                  </h5>
+                </td>
+              </tr><tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Use advanced Find</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5>
+                    <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">F</span>
+                  </h5>
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

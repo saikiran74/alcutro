@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<h1>Contact Us</h1>
+<form action="contact" method="POST">
+    {% csrf_token %}
+    <div class="card" style="background: none;">
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <label><h5>Name</h5></label>
+                </div>
+                <div class="col-6">
+                    <input type="text" name="name" placeholder="Enter your name" class="form-control" required>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-6">
+                    <label><h5>Email</h5></label>
+                </div>
+                <div class="col-6">
+                    <input type="email" name="email" placeholder="Enter your email" class="form-control" required>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-6">
+                    <label><h5>Querry</h5></label>
+                </div>
+                <div class="col-6">
+                    <input type="text" name="querry" placeholder="Enter your querry" class="form-control" required>
+                </div>
+            </div><br>
+            <div class="row" style="width: 100%;" >
+                <button class="btn btn-primary" name="Submit" style="margin-left: 50%; margin-right: 50%;"><h5>Submit</h5></button>
+            </div>
+            <br>
+        </div>
+    </div>
+</form>
+
+
+{% endblock %}

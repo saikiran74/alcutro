@@ -1,0 +1,273 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=sdge">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css" >
+  <link rel="stylesheet" href="{% static 'node_modules/font-awesome/css/font-awesome.min.css' %}">
+
+  <title>ign-up</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row row-header">
+          <!--<a href="./index1.html">
+            <span style="font-size: 50px; color:rgb(243, 243, 243);" >
+              <span class="fa fa-user-circle" data-toggle="popover" data-target="focus"></span>
+            </span>
+          </a>-->
+          
+            
+            <div class="col-6">
+              <a style="text-decoration: none;" href="/">
+                <h1 style="font-family: Arial, Helvetica, sans-serif; ">Alcutro</h1>
+              </a>
+            </div>
+            <div class="col-6" style="text-align: end;">
+                <a role="button" href="favourite" class="btn btn-primary" >Favourites</a>
+                <a href="signin" role="button" class="btn btn-primary">Sign-in</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar bg-primary navbar-expand-sm navbar-dark ">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="Navbar1">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" width="200px" href="#">&nbsp&nbsp&nbsp&nbsp&nbsp Adobe</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> &nbsp&nbsp&nbsp&nbsp&nbsp Apple</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="browserdropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> &nbsp&nbsp&nbsp&nbsp&nbsp Browsers</a>
+            <div class="dropdown-menu " aria-labelledby="browserdropdown">
+              <div>
+                <a class="dropdown-item" href="#">Brave</a>
+                <a class="dropdown-item" href="#">Chrome</a>
+                <a class="dropdown-item" href="#">Edge</a>
+                <a class="dropdown-item" href="#">Firefox</a>
+                <a class="dropdown-item" href="#">Internet explorer</a>
+              </div>
+
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="Googledropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> &nbsp&nbsp&nbsp&nbsp&nbsp Google</a>
+            <div class="dropdown-menu dropdown-multicol" aria-labelledby="Googledropdown">
+              <div class="dropdown-row">
+                <a class="dropdown-item" href="#">Adword</a>
+                <a class="dropdown-item" href="#">Analytics</a>
+                <a class="dropdown-item" href="#">App maker</a>
+                <a class="dropdown-item" href="#">Calendar</a>
+                <a class="dropdown-item" href="#">Chat</a>
+                <a class="dropdown-item" href="#">Chrome</a>
+                <a class="dropdown-item" href="#">Contacts</a>
+                <a class="dropdown-item" href="#">Docs</a>
+                <a class="dropdown-item" href="#">Drawing</a>
+                <a class="dropdown-item" href="#">Drive</a>
+                <a class="dropdown-item" href="#">Earth</a>
+                <a class="dropdown-item" href="#">Forms</a>
+                <a class="dropdown-item" href="#">Gmail</a>
+                <a class="dropdown-item" href="#">Groups</a>
+                <a class="dropdown-item" href="#">Hangout</a>
+                <a class="dropdown-item" href="#">Keep</a>
+                <a class="dropdown-item" href="#">Meet</a>
+                <a class="dropdown-item" href="#">Photos</a>
+                <a class="dropdown-item" href="#">Sheet</a>
+                <a class="dropdown-item" href="#">Site</a>
+                <a class="dropdown-item" href="#">Slides</a>
+                <a class="dropdown-item" href="#">Web designer</a>
+                <a class="dropdown-item" href="#">Youtube</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="Meetingdropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> &nbsp&nbsp&nbsp&nbsp&nbsp Meeting</a>
+            <div class="dropdown-menu" aria-labelledby="Meetingdropdown">
+              <div>
+                <a class="dropdown-item" href="#">Cisco Webex</a>
+                <a class="dropdown-item" href="#">Google Meet</a>
+                <a class="dropdown-item" href="#">Microsoft Teams</a>
+                <a class="dropdown-item" href="#">Zoom</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="microsoftdropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> &nbsp&nbsp&nbsp&nbsp&nbsp Microsoft</a>
+            <div class="dropdown-menu dropdown-multicol" aria-labelledby="microsoftdropdown">
+              <div class="dropdown-row">
+                <a class="dropdown-item" href="#">Calendar</a>
+                <a class="dropdown-item" href="#">Edge</a>
+                <a class="dropdown-item" href="#">Excel</a>
+                <a class="dropdown-item" href="#">Game bar</a>
+                <a class="dropdown-item" href="#">Groove</a>
+                <a class="dropdown-item" href="#">Mail</a>
+                <a class="dropdown-item" href="#">Map</a>
+                <a class="dropdown-item" href="#">Movies and TV</a>
+                <a class="dropdown-item" href="#">Outlook</a>
+                <a class="dropdown-item" href="#">Paint</a>
+                <a class="dropdown-item" href="#">Paint 3D</a>
+                <a class="dropdown-item" href="#">Photos</a>
+                <a class="dropdown-item" href="#">Powerpoint</a>
+                <a class="dropdown-item" href="#">Skype</a>
+                <a class="dropdown-item" href="#">Teams</a>
+                <a class="dropdown-item" href="#">Voice recorder</a>
+                <a class="dropdown-item" href="#">Windows</a>
+                <a class="dropdown-item" href="#">Word</a>
+                <a class="dropdown-item" href="#">Workpad</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="socialmediadropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">&nbsp&nbsp&nbsp&nbsp&nbsp Social media</a>
+            <div class="dropdown-menu " aria-labelledby="socialmediadropdown">
+              <div>
+                <a class="dropdown-item" href="#">Twitter</a>
+                <a class="dropdown-item" href="#">Whatsapp</a>
+                <a class="dropdown-item" href="#">Youtube</a>
+              </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+
+
+  <div class="container ">
+      <div class="card col-md-6 offset-md-2">
+        <br>
+            <div class="container">
+        <form action="createaccount" method="post">
+            
+                <div class="row">
+                  {% csrf_token %}
+                    <div class="col-12 text-center">
+                        <h3 style="font-family: Arial, Helvetica, sans-serif; color:blueviolet">Create account</h3>
+                    </div><br><br>
+                    <div class="col-3">
+                        <label>Username</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="username" placeholder="Enter username" class="form-control" required>
+                    </div><br><br>
+                    <div class="col-3">
+                        <label>First name</label>
+                    </div>     
+                    <div class="col-8">
+                        <input type="text" name="first_name" placeholder="Enter first name" class="form-control" required >
+                    </div><br><br>
+                    <div class="col-3">
+                        <label>Last name</label>
+                    </div>     
+                    <div class="col-8">
+                        <input type="text" name="last_name" placeholder="Enter last name" class="form-control" required>
+                    </div>  <br><br>
+                    <div class="col-3">
+                        <label>Email</label>
+                    </div>     
+                    <div class="col-8">
+                        <input type="email" name="email" placeholder="Enter email" class="form-control" required>
+                    </div>  <br><br>
+                    <div class="col-3">
+                        <label>Password</label>
+                    </div>     
+                    <div class="col-8">
+                        <input type="password" name="password1" placeholder="Enter password" class="form-control" required>
+                    </div>  <br><br>
+                    <div class="col-3">
+                      
+                    </div>     
+                    <div class="col-8">
+                        <input type="password" name="password2" placeholder="Re-Enter password" class="form-control" required>
+                    </div>  <br><br>
+                    <div class="col-12 text-center">
+                        <input type="submit" class="btn btn-primary" value="Create account">
+                    </div>
+                    
+                </div>
+                <div class="text-center">
+                  {% for message in messages%}
+                  <h2>{{message}}</h2>
+                  {% endfor %}
+                </div>
+        </form>
+            </div>
+            
+        
+        <br><br><br>
+      </div>
+  </div>
+  
+
+
+  <br><br>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <h5>Pages</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a>
+            <li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-5">
+          <h5>Developers</h5>
+          Completed by Sk<br>
+          Design and development by Sai Kiran<br>
+          Content written by Sai kishore bobbili<br>
+        </div>
+        <div class="col-12 col-sm-1 align-self-center">
+          <div class="text-center">
+            <h5>Contact/Follow</h5>
+            <a href="#">YouTube</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatApp</a>
+            <a href="#">Printerest</a>
+            <a href="#">Instagram</a>
+            <a href="#">Mail</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <h5>© Copyright 2021 Shortcuttkey</h5>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
