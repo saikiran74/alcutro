@@ -1,0 +1,184 @@
+<title></title>
+{% extends 'base.html'%}
+{% block content %}
+<div class="">
+    <div class="card">
+      <h3 class="card-header bg-primary text-white">Google Earth</h3>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tbody>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Decrease camera altitude</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">&uarr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Fly to your location</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">l</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Focus globe</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">g</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Increase camera altitude</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">&darr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Keyboard shortcuts</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">?</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Map style</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">m</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Measure distance and area</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Shift</span>
+                  <span class="badge badge-secondary badge-pill">M</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Pan down</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">&darr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Pan left</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5> <span class="badge badge-secondary badge-pill">&larr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Pan right</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">&rarr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Pan up</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">&uarr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Projects</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">p</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Reset to north</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">n</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Reset to top down view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">u</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Reset view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">r</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Rotate the camera to down</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">&darr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Rotate the camera to left</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5> <span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">&larr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Rotate the camera to right</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">&rarr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Rotate the camera to up</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Ctrl</span>
+                    <span class="badge badge-secondary badge-pill">&uarr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Rotate the 3D scene to down</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">&darr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Rotate the 3D scene to left</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5> <span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">&larr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Rotate the 3D scene to right</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">&rarr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Rotate the 3D scene to up</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Shift</span>
+                    <span class="badge badge-secondary badge-pill">&uarr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Search</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">/</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Settings</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">,</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Stop camera movement</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Space</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Toggle between a 2D and 3D view</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">o</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>View earth from space</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">Ctrl</span>
+                  <span class="badge badge-secondary badge-pill">x</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Zoom in</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">&uarr;</span></h5></td>
+              </tr>
+              <tr class="d-flex">
+                <th class="col-6 col-md-6 col-sm-6 col-lg-5 col-xl-5"><h5>Zoom out</h5></th>
+                <td class="col-6 col-md-6 col-sm-6 col-lg-7 col-xl-7">
+                  <h5><span class="badge badge-secondary badge-pill">&darr;</span></h5></td>
+              </tr>
+
+
+            </tbody>
+
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}
