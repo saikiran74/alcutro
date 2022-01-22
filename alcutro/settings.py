@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['shortcuttkey.herokuapp.com', '127.0.0.1']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -81,7 +82,8 @@ DATABASES = {
         'NAME': 'alcutro',
         'USER':'postgres',
         'PASSWORD':'1234',
-        'HOST':'localhost'
+        'HOST':'localhost',
+        'PORT': '5432',
     }
 }
 
