@@ -1,1 +1,0 @@
-web gunicorn alcutro.wsgi:application --log-file -
